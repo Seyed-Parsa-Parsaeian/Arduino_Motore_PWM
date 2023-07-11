@@ -1,0 +1,32 @@
+void setup() {
+  // put your setup code here, to run once:
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}
+void motor(int a,int b){
+  int MLP = 5;
+  int MLN =  6;
+  int MRP = 10;
+  int MRN = 11;
+
+  if(a>0){
+    analogWrite(MLP,a);
+    analogWrite(MLN,0);
+  }
+   if(a<=0){
+    analogWrite(MLP,a);
+    analogWrite(MLN,(-1)*a);
+  }
+   if(b>0){
+    analogWrite(MLP,b);
+    analogWrite(MLN,0);
+  }
+   if(b<=0){
+    analogWrite(MLP,a);
+    analogWrite(MLN,(-1)*a);
+  }
+}
